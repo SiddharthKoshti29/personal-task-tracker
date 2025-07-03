@@ -1,4 +1,4 @@
-// src/components/Login.js
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -10,7 +10,7 @@ function Login({ onLogin }) {
     e.preventDefault();
     if (username.trim() === '') return;
     localStorage.setItem('username', username.trim());
-    onLogin(); // Inform App about the login
+    onLogin();
     navigate('/dashboard');
   };
 

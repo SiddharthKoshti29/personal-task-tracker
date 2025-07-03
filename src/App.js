@@ -1,4 +1,4 @@
-// src/App.js
+
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './components/Login';
@@ -8,7 +8,7 @@ function App() {
   const [username, setUsername] = useState(localStorage.getItem('username') || '');
   const [darkMode, setDarkMode] = useState(false);
 
-  // Listen for login changes from Login component via localStorage event
+
   useEffect(() => {
     const handleStorageChange = () => {
       setUsername(localStorage.getItem('username') || '');

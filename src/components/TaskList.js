@@ -6,7 +6,7 @@ function TaskList({ tasks, filter, updateTask, deleteTask }) {
     return <p>No tasks available.</p>;
   }
 
-  // ✅ Filter tasks before rendering
+ 
   const filteredTasks = tasks.filter(task => {
     if (filter === 'completed') return task.completed;
     if (filter === 'pending') return !task.completed;

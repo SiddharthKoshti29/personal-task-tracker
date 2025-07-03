@@ -1,4 +1,4 @@
-// src/components/TaskItem.js
+
 import React from 'react';
 
 function TaskItem({ task, updateTask, deleteTask }) {
